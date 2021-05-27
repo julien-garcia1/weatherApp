@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+.large-screen-home-content {
+  display: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  overflow-y: hidden !important;
+  position: relative;
+}
+
+.data p {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+h3 {
+  font-size: 23px
+}
+
+#result {
+  margin-top: 45px;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  margin-top: 20px;
+  border-radius: 0px 12px 0px 12px;
+  padding: 15px;
+  border: none;
+  width: 90%;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 6px 6px 10px rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+#city-title {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+#temper {
+  font-size: 110px;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
+#cel {
+  font-weight: 100;
+  font-size: 80px;
+  position: absolute;
+  top: 25;
+}
+
+.weather-data {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#date {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  bottom: 20;
+  font-size: 19px;
+}
+
+.background {
+  background: url('https://res.cloudinary.com/dwv60m21t/image/upload/v1622099685/landscape-4321807_1920_s3x5o2.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.background-cold {
+  background: url('https://res.cloudinary.com/dwv60m21t/image/upload/v1622099680/natural-4821550_1280_cfhemb.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+.background-sunset {
+  background: url('https://res.cloudinary.com/dwv60m21t/image/upload/v1622099697/digital-art-1434763_1920_ykua2r.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.background-mountains {
+  background: url('https://res.cloudinary.com/dwv60m21t/image/upload/v1622099691/mountains-5655059_1280_awxco3.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+.background-rain {
+  background: url('https://res.cloudinary.com/dwv60m21t/image/upload/v1622107928/tumblr_muo6y6LJOb1qm84rpo1_500_odddq3.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.background-night {
+  background: url('https://res.cloudinary.com/dwv60m21t/image/upload/v1622108434/night-4745678_1280_zxvsvl.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+.background-cold-day {
+  background: url('https://res.cloudinary.com/dwv60m21t/image/upload/v1622109063/mountain-4823514_1280_gqkeic.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+@media (min-width: 780px) {
+  .large-screen-home-content {
+    display: inline;
+    text-align: center;
+  }
+
+  .large-screen-home-content h2 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 120px;
+  }
+
+  #cel {
+    top: 72;
+  }
+
+  .weather-data {
+    padding: 0px 120px;
+  }
+
+  input {
+    margin-bottom: 50px;
+  }
+  #city-title {
+    font-size: 65px;
+  }
+
+  #temper {
+    font-size: 130px;
+  }
+
+  #date {
+    display: block;
+    margin-left: 120px;
+  }
+}

@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather Application Javascript</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="background" class="background">
+      <div class="container">
+        <form action="#" method="get" id="form">
+          <input type="text" id="city" placeholder="Enter a city">
+        </form>
+        <div class="large-screen-home-content">
+          <h2>This is a Weather Application optimized for mobile only.</h2>
+          <p>So take your phone and test it in order to have a better experience</p>
+        </div>
+        <div id="result">
+          <div class="insertHtml"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDuQ74520mN2nZihovZnSSBKiveuzU28dQ",
+        authDomain: "weather-appjs.firebaseapp.com",
+        projectId: "weather-appjs",
+        storageBucket: "weather-appjs.appspot.com",
+        messagingSenderId: "28535550245",
+        appId: "1:28535550245:web:db4430cb80cd3efdbaeacc"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
