@@ -5,6 +5,8 @@ const form = document.querySelector('#form');
 const button = document.querySelector('button');
 const advice = document.getElementById('advice');
 
+const token = config.MY_API_TOKEN;
+
 let date1 = new Date();
 let dateLocale = date1.toLocaleString('fr-FR',{
   weekday: 'long',
@@ -27,7 +29,7 @@ form.addEventListener('submit', (e) => {
 
 const fetchMethod = (city) => {
   addHtml.innerHTML = '';
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=097e47268fb73c099bf0be800956a815`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${token}`;
   fetch(url)
   .then(response => response.json())
   .then((data) => {
