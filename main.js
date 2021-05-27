@@ -54,16 +54,16 @@ const fetchMethod = (city) => {
     if (addHtml.innerText !== '') {
       document.querySelector('.large-screen-home-content').style.display = 'none'
     }
-    if (getTemper < 15 && timeNow >= '20:00'  && timeNow < '23:00') {
+    if (getTemper < 21 && timeNow >= '20:00'  && timeNow < '23:00') {
       background.removeAttribute('class')
       background.classList.add('background-mountains')
-    } else if (getTemper < 15 && timeNow < '20:00') {
+    } else if (getTemper < 21 && timeNow < '20:00') {
       background.removeAttribute('class')
       background.classList.add('background-cold-day')
     } else if (getDescription.includes('rain')) {
       background.removeAttribute('class')
       background.classList.add('background-rain')
-    } else if (getTemper >= 15 && timeNow < '20:00') {
+    } else if (getTemper >= 21 && timeNow < '20:00') {
       background.removeAttribute('class')
       background.classList.add('background')
     } else if (timeNow >= '23:00' && timeNow <= '6:00') {
